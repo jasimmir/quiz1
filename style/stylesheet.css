@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,900;1,400&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.logo img {
+  width: 150px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.02);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+nav .menu-btn,
+.menu-icon {
+  display: none;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  font-family: sans-serif;
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0 22px;
+  display: flex;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.4s ease-in-out;
+}
+nav ul li a:hover {
+  background-color: #651ed8;
+  color: #fff;
+  box-shadow: 5px 10px 30px rgba(203, 0, 253, 0.05);
+}
+/* header */
+.main {
+  width: 100%;
+  height: 786px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-heading {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-30%, -50%);
+  color:rgba(203, 0, 253, 2);
+}
+.main-heading h1 {
+  font: 900;
+  margin: 0;
+  color: #8b4242;
+}
+.main-heading h1 span {
+  color: #651ed8;
+}
+.header-btn {
+  width: 120px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #651ed8;
+  box-shadow: 5px 10px 30px rgba(203, 0, 253, 0.05);
+  border-radius: 10px;
+  color: #fff;
+}
+.header-btn:hover{
+  background-color: #ffbd04;
+  color: #000;
+  box-shadow: 5px 10px 30px rgba(203, 0, 253, 0.05);
+}
+/* **************** */
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/**************/
+
+.main-heading {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+}
+.header-btn {
+  width: 120px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #651ed8;
+  box-shadow: 5px 10px 30px rgba(203, 0, 253, 0.05);
+  border-radius: 10px;
+  color: #fff;
+}
+.header-btn:hover{
+  background-color: #ffbd04;
+  color: #000;
+  box-shadow: 5px 10px 30px rgba(203, 0, 253, 0.05);
+}
+.projects{
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+}
+.projects p{
+  color: #c0c0c0;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.work-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-box{
+  background-color: #fff;
+  width: 350px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.work-img{
+  width: 100%;
+  height: 60%;
+}
+.work-img img{
+  width: 100%;
+  height: 100%;
+}
+.work-heading{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.work-heading p{
+  text-align: center;
+  letter-spacing: 1px;
+}
+.footer{
+  background-color: #000;
+  color: white;
+  text-align:  center;
+  padding:25px;
+  
+}
